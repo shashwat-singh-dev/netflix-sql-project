@@ -84,3 +84,14 @@ CREATE TABLE netflix
     listed_in    VARCHAR(250),
     description  VARCHAR(550)
 );
+
+## 💡 Business Problems & Solutions
+
+### 1. Count the Number of Movies vs TV Shows
+
+```sql
+SELECT 
+    type,
+    COUNT(*) AS total_content
+FROM netflix
+GROUP BY type;
