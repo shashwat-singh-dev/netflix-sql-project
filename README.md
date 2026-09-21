@@ -4,20 +4,7 @@
 
 ## 📌 Overview
 
-This project focuses on analyzing the **Netflix Movies and TV Shows dataset using SQL and PostgreSQL**.
-
-The objective of this project is to practice SQL concepts through real-world business questions and extract meaningful insights from Netflix's content catalog.
-
-The analysis covers:
-
-- Content distribution between Movies and TV Shows
-- Ratings and genres
-- Countries producing Netflix content
-- Release years and content trends
-- Movie and TV Show durations
-- Directors and actors
-- Indian content analysis
-- Keyword-based content categorization
+This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
 
 ---
 
@@ -283,6 +270,10 @@ Objective: Categorize content as 'Bad' if it contains 'kill' or 'violence' and '
 
 Findings and Conclusion
 ---
+- Content Distribution: The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
+- Common Ratings: Insights into the most common ratings provide an understanding of the content's target audience.
+- Geographical Insights: The top countries and the average content releases by India highlight regional content distribution.
+- Content Categorization: Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
 
 
 
