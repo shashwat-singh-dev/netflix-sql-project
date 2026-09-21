@@ -84,6 +84,7 @@ CREATE TABLE netflix
     listed_in    VARCHAR(250),
     description  VARCHAR(550)
 );
+```
 
 ## 💡 Business Problems & Solutions
 
@@ -95,3 +96,4 @@ SELECT
     COUNT(*) AS total_content
 FROM netflix
 GROUP BY type;
+```
