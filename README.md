@@ -97,7 +97,10 @@ SELECT
 FROM netflix
 GROUP BY type;
 ```
-##  Find the Most Common Rating for Movies and TV Shows
+Objective: Determine the distribution of content types on Netflix.
+----
+## 2. Find the Most Common Rating for Movies and TV Shows
+
 ``` sql
 WITH RatingCounts AS (
     SELECT 
@@ -124,3 +127,39 @@ SELECT
 FROM RankedRatings
 WHERE rank = 1;
 ```
+## 3. List All Movies Released in a Specific Year
+
+``` sql
+SELECT 
+    title,
+    release_year
+FROM netflix
+WHERE type = 'Movie'
+  AND release_year = 2020;
+```
+## 4. Find the Top 5 Countries with the Most Content on Netflix
+
+``` sql
+SELECT * 
+FROM
+(
+    SELECT 
+        UNNEST(STRING_TO_ARRAY(country, ',')) AS country,
+        COUNT(*) AS total_content
+    FROM netflix
+    GROUP BY 1
+) AS t1
+WHERE country IS NOT NULL
+ORDER BY total_content DESC
+LIMIT 5;
+```
+## 5. Identify the Longest Movie
+
+``` sql
+SELECT 
+    *
+FROM netflix
+WHERE type = 'Movie'
+ORDER BY SPLIT_PART(duration, ' ', 1)::INT DESC;
+```
+
