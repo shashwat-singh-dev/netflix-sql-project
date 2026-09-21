@@ -45,21 +45,6 @@ The dataset used in this project is the **Netflix Movies and TV Shows dataset** 
 **Source:**  
 https://www.kaggle.com/datasets/shivamb/netflix-shows
 
-The dataset contains information about Netflix movies and TV shows, including:
-
-- Show ID
-- Type
-- Title
-- Director
-- Cast
-- Country
-- Date Added
-- Release Year
-- Rating
-- Duration
-- Genre
-- Description
-
 ---
 
 ## 🗃️ Database Schema
